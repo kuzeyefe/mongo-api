@@ -5,6 +5,8 @@ const Customer = require("../models/customer");
 const Movie = require("../models/movie");
 
 
+
+
 router.post("/", async (req, res) => {
     const { error } = validate(req.body);
     if(error) {
